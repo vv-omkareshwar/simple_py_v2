@@ -1,15 +1,15 @@
 class Searcher:
     def __init__(self, numbers):
-        self.a = number
+        self.numbers = number
 
     def binary(self, tgt):
         left = 0
-        r = len(self.a) - 1
+        r = len(self.numbers) - 1
         while left <= r:
             mid = (left + r) // 2
-            if self.a[mid] == tgt:
+            if self.numbers[mid] == tgt:
                 return mid
-            elif self.a[mid] < tgt:
+            elif self.numbers[mid] < tgt:
                 left = mid + 1
             else:
                 r = mid - 1
