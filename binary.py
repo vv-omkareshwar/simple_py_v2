@@ -1,25 +1,25 @@
-class Searcher:
-    def __init__(self, numbers):
-        self.numbers = number
+class S:
+    def __init__(s, n):
+        s.n = n
 
-    def binary(self, tgt):
-        left = 0
-        right_boundary = len(self.numbers) - 1
-        while left <= right_boundary:
-            mid = (left + right_boundary) // 2
-            if self.numbers[mid] == tgt:
-                return mid
-            elif self.numbers[mid] < tgt:
-                left = mid + 1
+    def b(s, t):
+        l = 0
+        r = len(s.n) - 1
+        while l <= r:
+            m = (l + r) // 2
+            if s.n[m] == t:
+                return m
+            elif s.n[m] < t:
+                l = m + 1
             else:
-                right_boundary = mid - 1
+                r = m - 1
         return -1
 
-def main_func():
-    listToCheck = [2, 4, 6, 8, 10, 12, 14] 
-    target = 10
-    s = Searcher(listToCheck)
-    idx = s.binary(target)
-    print("Found at index:", idx)
+def f():
+    a = [2, 4, 6, 8, 10, 12, 14]
+    t = 10
+    s = S(a)
+    i = s.b(t)
+    print("Found at index:", i)
 
-main_func()
+f()
