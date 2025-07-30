@@ -4,15 +4,15 @@ class Searcher:
 
     def binary(self, tgt):
         left = 0
-        r = len(self.numbers) - 1
-        while left <= r:
-            mid = (left + r) // 2
+        right_boundary = len(self.numbers) - 1
+        while left <= right_boundary:
+            mid = (left + right_boundary) // 2
             if self.numbers[mid] == tgt:
                 return mid
             elif self.numbers[mid] < tgt:
                 left = mid + 1
             else:
-                r = mid - 1
+                right_boundary = mid - 1
         return -1
 
 def main_func():
