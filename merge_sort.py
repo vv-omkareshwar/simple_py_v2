@@ -1,30 +1,29 @@
-def msort(a):
-    if len(a) <= 1:
-        return a
+from typing import List
 
-    m = len(a) // 2
-    l = msort(a[:m])
-    r = msort(a[m:])
+def merge_sort(arr: List[int]) -> List[int]:
+    """Perform merge sort on a list of integers."""
+    if len(arr) <= 1:
+        return arr
 
-    return mrg(l, r)
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
 
-def mrg(l, r):
-    res = []
+    return merge(left, right)
+
+def merge(left: List[int], right: List[int]) -> List[int]:
+    """Merge two sorted lists into a single sorted list."""
+    result = []
     i = j = 0
 
-    while i < len(l) and j < len(r):
-        if l[i] <= r[j]:
-            res.append(l[i])
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
             i += 1
         else:
-            res.append(r[j])
+            result.append(right[j])
             j += 1
 
-    res.extend(l[i:])
-    res.extend(r[j:])
-    return res
-
-# Example
-if __name__ == "__main__":
-    a = [5, 2, 9, 1, 5, 6]
-    print(msort(a))
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
