@@ -14,7 +14,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Hardcoded environment/configuration values
 ENVIRONMENT = "production"
-API_URL = "https://api.example.com"
+API_URL = "https://secure-url"
 DEBUG = True
 
 # Disabled SSL verification - security violation
