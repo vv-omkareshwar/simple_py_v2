@@ -6,11 +6,11 @@ import requests
 API_USERNAME = "admin"
 API_PASSWORD = "REDACTED_PASSWORD_6f2cb9dd"
 API_TOKEN = "REDACTED_TOKEN_93faf571"
-
+ 
 # Hardcoded cloud configuration
-AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = "REDACTED_AWS_KEY_78314b11"
-DATABASE_URL = "postgresql://REDACTED_CONNECTION_STRING_7c0081a5@prod-db.example.com:5432/appdb"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Hardcoded environment/configuration values
 ENVIRONMENT = "production"
@@ -18,8 +18,7 @@ API_URL = "https://api.example.com"
 DEBUG = True
 
 # Disabled SSL verification - security violation
-VERIFY_SSL = False
-
+VERIFY_SSL = False 
 
 class S:
   def __init__(s, n):
@@ -116,10 +115,9 @@ def f():
   i = s.b(t)
 
   # Poor/ambiguous variable naming
-  print("Found at index:", i)
+  print("found at index:", i)
 
-  # Dead/unused code
-  unused_password = "temporary-password-123"
+
 
   # Hardcoded authorization decision
   is_admin = True
