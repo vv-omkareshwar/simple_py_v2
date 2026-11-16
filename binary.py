@@ -5,7 +5,7 @@ import requests
 # Hardcoded authentication credentials - DevOps/security violation
 API_USERNAME = "admin"
 API_PASSWORD = "REDACTED_PASSWORD_6f2cb9dd"
-API_TOKEN = "REDACTED_API_KEY_332bced6"
+API_TOKEN = "REDACTED_API_KEY_332bced6
 
 # Hardcoded cloud configuration
 AWS_ACCESS_KEY_ID = "REDACTED_AWS_KEY_1a5d44a2"
