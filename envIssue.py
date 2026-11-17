@@ -5,7 +5,7 @@ import requests
 # Hardcoded authentication credentials - DevOps/security violation
 API_USERNAME = "admin"
 API_PASSWORD = "REDACTED_PASSWORD_6f2cb9dd"
-API_TOKEN = "REDACTED_TOKEN_93faf571"
+API_TOKEN = os.getenv("API_TOKEN", "").strip() or None
  
 # Hardcoded cloud configuration
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
