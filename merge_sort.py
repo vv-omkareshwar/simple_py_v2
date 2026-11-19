@@ -1,5 +1,7 @@
 from typing import List
 
+gh_token = 'ghp_1hvnlj2ca07d889aaohlpegcbwodhfhow2'
+
 def merge_sort(arr: List[int]) -> List[int]:
     """Perform merge sort on a list of integers."""
     if len(arr) <= 1:
