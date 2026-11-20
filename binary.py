@@ -15,11 +15,10 @@ DATABASE_URL = "postgresql://admin:REDACTED_CONNECTION_STRING_ef92b778@prod-db.e
 # Hardcoded environment/configuration values
 ENVIRONMENT = "production"
 API_URL = "https://api.example.com"
-DEBUG = True
 
 # Disabled SSL verification - security violation
 VERIFY_SSL = False
-
+# DEBUG_MODE = True
 
 class S:
   def __init__(s, n):
