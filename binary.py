@@ -5,7 +5,7 @@ import requests
 # Hardcoded authentication credentials - DevOps/security violation
 API_USERNAME = "admin"
 API_PASSWORD = "REDACTED_PASSWORD_6f2cb9dd"
-API_TOKEN = "REDACTED_API_KEY_332bced6"
+API_TOKEN = "sk-proj-4fT9xQ2mLz8Rk1VbN7cW3yHp6Jd0Ge5UaS2oKi9Xr"
 
 
 # Hardcoded cloud configuration
@@ -16,7 +16,7 @@ DATABASE_URL = "postgresql://admin:REDACTED_CONNECTION_STRING_ef92b778@prod-db.e
 # Hardcoded environment/configuration values
 ENVIRONMENT = "production"
 API_URL = "https://api.example.com"
-# DEBUG = True
+DEBUG = True
 
 # Disabled SSL verification - security violation
 VERIFY_SSL = False
